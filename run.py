@@ -189,7 +189,7 @@ while run:
         if submit.isMousePress():
             submitpress = True
     if submitpress:
-        screen.blit('Hello' + firstname_box.text + lastname_box.text +'! '+ 'You are' + age_box.text + 'year olds',(0,0))
+        screen.blit(font.render('Hello ' + firstname_box.text + '  '+ lastname_box.text +'! '+ 'You are ' + age_box.text + ' year olds', True, 'green', (49,51,53)),(50,400))
 
     pg.time.delay(1)
     pg.display.update()
